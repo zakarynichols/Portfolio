@@ -16,89 +16,100 @@
     <title>Zakary Nichols</title>
   </head>
   <body>
-    <section class="topnav" id="myTopnav">
-      <a href="#home" class="active">HOME</a>
-      <a href="#news">NEWS</a>
-      <a href="#contact">CONTACT</a>
-      <a href="#about">ABOUT</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars" style="font-size: 25px;"></i>
-      </a>
-    </section>
+    <div>
+      <section class="topnav" id="myTopnav">
+        <nav>
+          <div class="navWide">
+            <div class="wideDiv">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <div class="navNarrow">
+            <i class="fa fa-bars fa-2x"></i>
+            <div class="narrowLinks hidden">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+        </nav>
+      </section>
 
-    <section class="hero text-center container my-5" style="width: 400px;">
-      <h1 style="margin-top: 75px;">Hi, I'm Zak <span>👋</span></h1>
-      <p class="mt-3">
-        Full-Stack Developer from Jonesville, MI. I'm self taught and I love
-        making things on the web. Focusing on JavaScript and functional
-        programming.
-      </p>
-      <a
-        class="btn btn-primary text-white btn-block"
-        style="font-size: 20px;"
-      >
-        Projects
-      </a>
-      <br />
-      <a
-        class="btn btn-secondary text-white btn-block"
-        style="font-size: 20px;"
-      >
-        Blog
-      </a>
-    </section>
+      <section class="hero text-center container my-5" style="width: 400px;">
+        <h1 style="margin-top: 75px;">Hi, I'm Zak <span>👋</span></h1>
+        <p class="mt-3">
+          Full-Stack Developer from Jonesville, MI. I'm self taught and I love
+          making things on the web. Focusing on JavaScript and functional
+          programming.
+        </p>
+        <a
+          class="btn btn-primary text-white btn-block"
+          style="font-size: 20px;"
+        >
+          Projects
+        </a>
+        <br />
+        <a
+          class="btn btn-secondary text-white btn-block"
+          style="font-size: 20px;"
+        >
+          Blog
+        </a>
+      </section>
 
-    <section class="technologies container">
-      <h1>Technologies</h1>
-      <h3>Front End</h3>
-      <div class="row text-center">
-        <div class="col">
-          <img
-            class="img-responsive"
-            height="50"
-            width="50"
-            src="./javascript.svg"
-            alt=""
-          />
+      <section class="technologies container">
+        <h1>Technologies</h1>
+        <h3>Front End</h3>
+        <div class="row text-center">
+          <div class="col">
+            <img
+              class="img-responsive"
+              height="50"
+              width="50"
+              src="./javascript.svg"
+              alt=""
+            />
+          </div>
+          <div class="col">
+            <img
+              class="img-responsive"
+              height="50"
+              width="50"
+              src="./react.svg"
+              alt=""
+            />
+          </div>
+          <div class="col">
+            <img
+              class="img-responsive"
+              height="50"
+              width="50"
+              src="./vue.svg"
+              alt=""
+            />
+          </div>
+          <div class="col">
+            <img
+              class="img-responsive"
+              height="50"
+              width="50"
+              src="./css.svg"
+              alt=""
+            />
+          </div>
         </div>
-        <div class="col">
-          <img
-            class="img-responsive"
-            height="50"
-            width="50"
-            src="./react.svg"
-            alt=""
-          />
-        </div>
-        <div class="col">
-          <img
-            class="img-responsive"
-            height="50"
-            width="50"
-            src="./vue.svg"
-            alt=""
-          />
-        </div>
-        <div class="col">
-          <img
-            class="img-responsive"
-            height="50"
-            width="50"
-            src="./css.svg"
-            alt=""
-          />
-        </div>
-      </div>
-    </section>
-
+      </section>
+    </div>
     <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
+      const navLinks = document.querySelector(".navNarrow");
+      const narrowLinks = document.querySelector(".narrowLinks");
+
+      navLinks.addEventListener("click", toggle);
+
+      function toggle() {
+        narrowLinks.classList.toggle("hidden");
       }
     </script>
   </body>

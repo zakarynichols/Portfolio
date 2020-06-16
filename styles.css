@@ -1,50 +1,62 @@
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: black;
+nav {
+  background-color: #2e3138;
   overflow: hidden;
+  padding: 1em;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
+nav a {
+  color: white;
+}
+
+nav a:visited {
+  color: white;
+}
+
+nav .navWide {
+  display: none;
+  margin: 0 auto;
+}
+
+nav .navWide .wideDiv {
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
 }
 
+nav .navWide .wideDiv a {
+  text-decoration: none;
+  display: inline-block;
+  /*Adjust padding to increase/decrease the space between links.*/
+  padding: 0 2em;
+}
 
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
+/*Navbar is set to default with the "hamburger" and links on the left
+side of the screen. To move to the right of the screen, simply
+change the three "float: Left;" references to read "float: right;".*/
+nav .navNarrow i {
+  float: left;
+  cursor: pointer;
+  color: white;
+}
+
+nav .navNarrow .narrowLinks a {
+  text-decoration: none;
+  display: block;
+  float: left;
+  clear: left;
+  padding: 0.5em 0;
+}
+
+.hidden {
   display: none;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
+/*Adjust breakpoint as desired to select when the "hamburger" menu is
+replaced by just the links.*/
+@media (min-width: 480px) {
+  nav .navWide {
     display: block;
   }
-}
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-  .topnav.responsive {
-    position: relative;
-  }
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
+  nav .navNarrow {
+    display: none;
   }
 }
