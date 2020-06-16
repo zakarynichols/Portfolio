@@ -60,3 +60,8 @@ replaced by just the links.*/
     display: none;
   }
 }
+
+.col {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
