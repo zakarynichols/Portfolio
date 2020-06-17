@@ -1,5 +1,5 @@
 body {
-    font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
 }
 
 nav {
@@ -54,8 +54,8 @@ nav .navNarrow .narrowLinks a {
 }
 
 img {
-    width: 35px;
-    height: 35px;
+  width: 35px;
+  height: 35px;
 }
 
 /*Adjust breakpoint as desired to select when the "hamburger" menu is
@@ -81,6 +81,38 @@ replaced by just the links.*/
 }
 
 span {
-    display: block;
-    margin-top: .5rem;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+span.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
