@@ -1,9 +1,10 @@
 body {
   font-family: "Fira Sans", sans-serif;
+  background-color: #fafafa;
 }
 
 nav {
-  background-color: #2e3138;
+  background-color: #5c6370;
   overflow: hidden;
   padding: 1em;
 }
@@ -114,5 +115,25 @@ span.wave {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+.technologies span {
+    font-size: 10px;
+}
+
+@media (min-width: 350px) {
+  .technologies span {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .technologies span {
+    font-size: 14px;
+  }
+
+  .technologies {
+      max-width: 768px;
   }
 }
