@@ -75,3 +75,8 @@ replaced by just the links.*/
   padding-right: 0 !important;
   padding-left: 0 !important;
 }
+
+span {
+    display: block;
+    margin-top: .5rem;
+}
