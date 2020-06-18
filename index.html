@@ -12,7 +12,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
     <title>Zak Nichols</title>
   </head>
@@ -38,177 +41,108 @@
         </nav>
       </section>
 
-      <section class="hero container text-center my-5" style="max-width: 400px;">
-        <h1 class="header-links"><strong>Hi, I'm Zak <span class="wave">👋</span></strong></h1>
-        <p class="mt-3">
+      <section class="hero container my-5 hero-max-width">
+        <h1 class="header-links mx-2">
+          <strong>Hi, I'm Zak <span class="wave">👋</span></strong>
+        </h1>
+        <p class="mt-3 mx-2">
           Full-Stack Developer from Jonesville, MI. I'm self taught and I love
           making things on the web. Focusing on JavaScript and functional
           programming.
         </p>
-        <div style="display: flex;">
-          <a
-          class="btn text-white m-2 py-2 header-links"
-          style="width: 235px; background-color: #5ca5e1; border-radius: 2.5px;"
-        >
-          PROJECTS
-        </a>
-        <a
-          class="btn text-white m-2 py-2 header-links"
-          style="width: 235px; background-color: #7c7c7c; border-radius: 2.5px;"
-        >
-          BLOG
-        </a>
-      </div>
+        <div class="hero-buttons text-center">
+          <a class="btn text-white m-2 py-2 header-links project-button">
+            PROJECTS
+          </a>
+          <a class="btn text-white m-2 py-2 header-links blog-button">
+            BLOG
+          </a>
+        </div>
       </section>
 
       <section class="technologies container">
         <h1 class="header-links"><strong>Technologies</strong></h1>
         <h3 class="pt-3 header-links">Front End</h3>
-        <div id="front-end" class="mx-5" style="display: flex; justify-content: space-between; text-align: center;">
-            <div class="m-2">
-                <img
-                  class="img-responsive"
-                  src="./images/javascript.svg"
-                  alt=""
-                />
-                <span>JavaScript</span>
-              </div>
-              <div class="m-2">
-                <img
-                  class="img-responsive"
-                  src="./images/react.svg"
-                  alt=""
-                />
-                <span>React</span>
-              </div>
-              <div class="m-2">
-                <img
-                  class="img-responsive"
-                  src="./images/vue.svg"
-                  alt=""
-                />
-                <span>Vue</span>
-              </div>
-              <div class="m-2">
-                <img
-                  class="img-responsive"
-                  src="./images/css.svg"
-                  alt=""
-                />
-                <span>CSS</span>
-              </div>
-              <div class="m-2">
-                <img
-                  class="img-responsive"
-                  src="./images/html.svg"
-                  alt=""
-                />
-                <span>HTML</span>
-              </div>
-            </div>
+        <div id="front-end" class="mx-3 icons">
+          <div class="m-2">
+            <img class="img-responsive" src="./images/javascript.svg" alt="" />
+            <span>JavaScript</span>
+          </div>
+          <div class="m-2">
+            <img class="img-responsive" src="./images/react.svg" alt="" />
+            <span>React</span>
+          </div>
+          <div class="m-2">
+            <img class="img-responsive" src="./images/vue.svg" alt="" />
+            <span>Vue</span>
+          </div>
+          <div class="m-2">
+            <img class="img-responsive" src="./images/css.svg" alt="" />
+            <span>CSS</span>
+          </div>
+          <div class="m-2">
+            <img class="img-responsive" src="./images/html.svg" alt="" />
+            <span>HTML</span>
+          </div>
+        </div>
 
         <h3 class="pt-5 header-links">Back End</h3>
-        <div id="back-end" class="mx-5" style="display: flex; justify-content: space-between; text-align: center;">
-            <div class="m-2">
-                <img
-                  class="img-responsive"
-                  src="./images/node.svg"
-                  alt=""
-                />
-                <span>Node</span>
-              </div>
-              <div class="m-2">
-                <img
-                  class="img-responsive"
-                  src="./images/postgres.svg"
-                  alt=""
-                />
-                <span>PostgreSQL</span>
-              </div>
-              <div class="m-2">
-                <img
-                  class="img-responsive"
-                  src="./images/mysql.svg"
-                  alt=""
-                />
-                <span>MySQL</span>
-              </div>
-              <div class="m-2">
-                <img
-                  class="img-responsive"
-                  src="./images/mongo.svg"
-                  alt=""
-                />
-                <span>MongoDB</span>
-              </div>
-              <div class="m-2">
-                <img
-                  class="img-responsive"
-                  src="./images/redis.svg"
-                  alt=""
-                />
-                <span>Redis</span>
-              </div>
-            </div>
+        <div id="back-end" class="mx-3 icons">
+          <div class="m-2">
+            <img class="img-responsive" src="./images/node.svg" alt="" />
+            <span>Node</span>
+          </div>
+          <div class="m-2">
+            <img class="img-responsive" src="./images/postgres.svg" alt="" />
+            <span>PostgreSQL</span>
+          </div>
+          <div class="m-2">
+            <img class="img-responsive" src="./images/mysql.svg" alt="" />
+            <span>MySQL</span>
+          </div>
+          <div class="m-2">
+            <img class="img-responsive" src="./images/mongo.svg" alt="" />
+            <span>MongoDB</span>
+          </div>
+          <div class="m-2">
+            <img class="img-responsive" src="./images/redis.svg" alt="" />
+            <span>Redis</span>
+          </div>
+        </div>
 
-            <h3 class="pt-5 header-links">DevOps & Tools</h3>
-            <div class="mx-5" id="dev-ops" style="display: flex; justify-content: space-between; text-align: center;">
-                <div class="m-2">
-                    <img
-                      class="img-responsive"
-                      src="./images/digitalocean.svg"
-                      alt=""
-                    />
-                    <span>DigitalOcean</span>
-                  </div>
-                  <div class="m-2">
-                    <img
-                      class="img-responsive"
-                      src="./images/git.svg"
-                      alt=""
-                    />
-                    <span>Git</span>
-                  </div>
-                  <div class="m-2">
-                    <img
-                      class="img-responsive"
-                      src="./images/github.svg"
-                      alt=""
-                    />
-                    <span>Github</span>
-                  </div>
-                  <div class="m-2">
-                    <img
-                      class="img-responsive"
-                      src="./images/ubuntu.svg"
-                      alt=""
-                    />
-                    <span>Ubuntu</span>
-                  </div>
-                  <div class="m-2">
-                    <img
-                      class="img-responsive"
-                      src="./images/vscode.svg"
-                      alt=""
-                    />
-                    <span>VSCode</span>
-                  </div>
-                </div>
-          </section>
+        <h3 class="pt-5 header-links">DevOps & Tools</h3>
+        <div class="mx-3 icons" id="dev-ops">
+          <div class="m-2">
+            <img
+              class="img-responsive"
+              src="./images/digitalocean.svg"
+              alt=""
+            />
+            <span>DigitalOcean</span>
+          </div>
+          <div class="m-2">
+            <img class="img-responsive" src="./images/git.svg" alt="" />
+            <span>Git</span>
+          </div>
+          <div class="m-2">
+            <img class="img-responsive" src="./images/github.svg" alt="" />
+            <span>Github</span>
+          </div>
+          <div class="m-2">
+            <img class="img-responsive" src="./images/ubuntu.svg" alt="" />
+            <span>Ubuntu</span>
+          </div>
+          <div class="m-2">
+            <img class="img-responsive" src="./images/vscode.svg" alt="" />
+            <span>VSCode</span>
+          </div>
+        </div>
+      </section>
 
-      <footer class="mt-4" style="height: 40px; color: white; background-color: #1e2631; display: flex; justify-content: center; align-items: center;">
-          Made by Zak Nichols
+      <footer class="mt-4 footer">
+        Made by Zak Nichols
       </footer>
     </div>
-    <script>
-      const navLinks = document.querySelector(".navNarrow");
-      const narrowLinks = document.querySelector(".narrowLinks");
-
-      navLinks.addEventListener("click", toggle);
-
-      function toggle() {
-        narrowLinks.classList.toggle("hidden");
-      }
-    </script>
+    <script src="./main.js"></script>
   </body>
 </html>

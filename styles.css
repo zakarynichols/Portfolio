@@ -142,3 +142,27 @@ span.wave {
       max-width: 768px;
   }
 }
+
+.hero-buttons {
+  display: flex;
+}
+
+.hero-buttons .project-button {
+  width: 235px; background-color: #5ca5e1; border-radius: 2.5px;
+}
+
+.hero-buttons .blog-button {
+  width: 235px; background-color: #7c7c7c; border-radius: 2.5px;
+}
+
+.icons {
+  display: flex; justify-content: space-between; text-align: center;
+}
+
+.hero-max-width {
+  max-width: 400px;
+}
+
+.footer{
+  height: 40px; color: white; background-color: #1e2631; display: flex; justify-content: center; align-items: center;
+}
