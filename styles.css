@@ -123,8 +123,30 @@ span.wave {
   }
 }
 
+.object {
+  -webkit-animation: action 0.75s infinite alternate;
+  animation: action 0.75s infinite alternate;
+  display: inline-block;
+}
+@-webkit-keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
 .technologies span {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 @media (min-width: 350px) {
@@ -139,7 +161,7 @@ span.wave {
   }
 
   .technologies {
-      max-width: 768px;
+    max-width: 768px;
   }
 }
 
@@ -148,21 +170,55 @@ span.wave {
 }
 
 .hero-buttons .project-button {
-  width: 235px; background-color: #5ca5e1; border-radius: 2.5px;
+  width: 235px;
+  background-color: #5ca5e1;
+  border-radius: 2.5px;
 }
 
 .hero-buttons .blog-button {
-  width: 235px; background-color: #7c7c7c; border-radius: 2.5px;
+  width: 235px;
+  background-color: #7c7c7c;
+  border-radius: 2.5px;
 }
 
 .icons {
-  display: flex; justify-content: space-between; text-align: center;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .hero-max-width {
   max-width: 400px;
 }
 
-.footer{
-  height: 40px; color: white; background-color: #1e2631; display: flex; justify-content: center; align-items: center;
+.footer {
+  height: 40px;
+  color: white;
+  background-color: #1e2631;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-projects-max-width {
+  max-width: 900px;
+}
+
+.project-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.mytest {
+  padding: 100px;
+  border: 1px solid red;
+  text-align: center;
+  margin: 20px;
 }
