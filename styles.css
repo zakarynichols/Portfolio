@@ -1,20 +1,25 @@
 body {
   font-family: "Fira Sans", sans-serif;
-  background-color: #fafafa;
+  background-color: #272b33;
+  color: #8f96a3;
+}
+
+.header-links {
+  color: #f1f2f4;
 }
 
 nav {
-  background-color: #5c6370;
+  background-color: #1e2631;
   overflow: hidden;
   padding: 1em;
 }
 
 nav a {
-  color: white;
+  color: #5ca5e1;
 }
 
 nav a:visited {
-  color: white;
+  color: #5ca5e1;
 }
 
 nav .navWide {
