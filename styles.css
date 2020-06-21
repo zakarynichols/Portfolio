@@ -4,6 +4,12 @@ body {
   color: #8f96a3;
 }
 
+/* ScrollReveal Utility Class to
+ prevent flashing on initial load. */
+html .sr .load-hidden {
+  visibility: hidden;
+}
+
 .header-links {
   color: #f1f2f4;
 }
