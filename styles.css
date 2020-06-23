@@ -220,11 +220,34 @@ span.wave {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-.mytest {
-  padding: 100px;
-  border: 1px solid red;
-  text-align: center;
-  margin: 20px;
+.custom-btn {
+  white-space: nowrap;
+}
+
+.flex-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 25vw;
+  object-fit: cover;
+}
+
+.card-body {
+  font-size: 15px;
+}
+
+.view-code-btn {
+  background-color: #5ca5e1;
+  border: 0;
+}
+
+.view-demo-btn {
+  background-color: #7c7c7c;
+  border: 0;
 }
