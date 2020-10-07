@@ -13,7 +13,7 @@ ScrollReveal({
   duration: 1000,
 })
 
-const myOptions = {
+const options = {
   distance: '20px',
   origin: 'left',
   interval: 120,
@@ -23,5 +23,5 @@ const fadeOptions = {
   interval: 480
 }
 
-ScrollReveal().reveal('.reveal', myOptions)
+ScrollReveal().reveal('.reveal', options)
 ScrollReveal().reveal('.fade-reveal', fadeOptions)
