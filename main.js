@@ -9,7 +9,7 @@ function toggle() {
 }
 
 // Scroll Reveal Configuration.
-ScrollReveal({ 
+ScrollReveal({
   duration: 1000,
 })
 
