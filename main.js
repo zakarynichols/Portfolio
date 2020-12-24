@@ -2,11 +2,11 @@
 const navLinks = document.querySelector(".navNarrow");
 const narrowLinks = document.querySelector(".narrowLinks");
 
-navLinks.addEventListener("click", toggle);
-
 const toggle = () => {
   narrowLinks.classList.toggle("hidden");
 }
+
+navLinks.addEventListener("click", toggle);
 
 // Scroll Reveal Configuration.
 ScrollReveal({
